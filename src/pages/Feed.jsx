@@ -1,7 +1,13 @@
 import React from 'react';
+import SideBar from '../components/SideBar';
 
-const Akis = () => {
-  return <div>Akis</div>;
+const Feed = () => {
+  return (
+    <div className="flex">
+      <SideBar />
+      <div>Vido</div>
+    </div>
+  );
 };
 
-export default Akis;
+export default Feed;
