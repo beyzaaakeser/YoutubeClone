@@ -35,3 +35,23 @@ body {
   gap: 40px;
   padding: 40px 60px;
 }
+
+@media (min-width: 1400px) {
+  .detail-page {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .detail-page {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 140px auto;
+  align-items: center;
+  gap: 20px;
+}
