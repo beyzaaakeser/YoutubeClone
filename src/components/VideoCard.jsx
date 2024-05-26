@@ -5,10 +5,9 @@ import { useNavigate } from 'react-router-dom';
 const VideoCard = ({ video }) => {
   const [isHover, setIsHover] = useState(false);
   const navigate = useNavigate(); // icerisinde girdigimiz urle gore tikladigimiz elemani bir sayfaya yonlendirmesine yariyor
-  console.log(video);
   return (
     <div
-      onClick={() => navigate(`watch?v=${video.videoId}`)}
+      onClick={() => navigate(`watch?v=${video?.videoId}`)}
       className="cursor-pointer"
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}

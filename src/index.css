@@ -28,3 +28,10 @@ body {
 .videos::-webkit-scrollbar-thumb {
   background: #818080;
 }
+
+.detail-page {
+  display: grid;
+  grid-template-columns: auto 400px;
+  gap: 40px;
+  padding: 40px 60px;
+}

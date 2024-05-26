@@ -12,7 +12,6 @@ export const VideoProvider = ({ children }) => {
 
   useEffect(() => {
     const type = selectedCategory.type;
-    console.log(type);
     const url =
       type === 'home'
         ? '/home'

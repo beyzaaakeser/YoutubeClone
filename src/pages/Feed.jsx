@@ -5,7 +5,6 @@ import VideoCard from '../components/VideoCard.jsx';
 
 const Feed = () => {
   const { video, error, isLoading } = useContext(VideoContext);
-  console.log(video);
   return (
     <div className="flex">
       <SideBar />
