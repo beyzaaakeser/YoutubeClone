@@ -41,7 +41,7 @@ const VideoDetail = () => {
             <h1 className="my-3 text-xl font-bold">{video.title}</h1>
             <ChannelInfo video={video} />
             <VideoInfo video={video} />
-            <Comments />
+            <Comments data={comments} />
           </>
         )}
       </div>
