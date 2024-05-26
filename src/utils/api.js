@@ -1,5 +1,10 @@
 import axios from 'axios';
 
+/*
+
+Yapilan her istekte gecerli olamsini istedigimiz ayarlari tanimladigimiz bir axios ornegi olusturalim
+
+*/
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
   params: {
