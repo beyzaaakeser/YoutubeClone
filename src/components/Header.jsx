@@ -1,16 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import { FaBell } from 'react-icons/fa';
 import { IoIosVideocam } from 'react-icons/io';
 import { MdVideoLibrary } from 'react-icons/md';
 
 const Header = () => {
+  const navigate = useNavigate();
   // form gonderilince calisacak fonksiyon
   const handleSubmit = (e) => {
     e.preventDefault();
     const text = e.target[0].value;
     if (text.trim() === '') return;
+
+    navigate(`/results?search_query=${text}`);
   };
 
   return (

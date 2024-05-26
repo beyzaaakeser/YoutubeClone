@@ -6,19 +6,9 @@ const VideoCard = ({ video, isRow }) => {
   const [isHover, setIsHover] = useState(false);
   const navigate = useNavigate(); // icerisinde girdigimiz urle gore tikladigimiz elemani bir sayfaya yonlendirmesine yariyor
 
-  const location = useLocation();
-
-  const handleNavigate = () => {
-    if (location.pathname.startsWith('/watch')) {
-      navigate(`?v=${video?.videoId}`);
-    } else {
-      navigate(`watch?v=${video?.videoId}`);
-    }
-  };
-
   return (
     <div
-      onClick={handleNavigate}
+      onClick={() => navigate(`/watch?v=${video?.videoId}`)}
       className={`${isRow ? 'row' : ''} cursor-pointer`}
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
@@ -39,7 +29,7 @@ const VideoCard = ({ video, isRow }) => {
       {/* Videos information Part */}
       <div className="flex gap-4 mt-5 ">
         <img
-          className="w-14 h-14 rounded-full cursor-pointer"
+          className="w-14 h-14 c-pic rounded-full cursor-pointer"
           src={video.channelThumbnail && video.channelThumbnail[0].url}
           alt="channel logo"
         />
@@ -49,7 +39,7 @@ const VideoCard = ({ video, isRow }) => {
           <div className="flex gap-2">
             <p className="flex gap-1">
               <span>{millify(video.viewCount)}</span>
-              <span> Goruntulenme</span>
+              <span className="text"> Goruntulenme</span>
             </p>
             |<p>{video.publishedTimeText}</p>
           </div>
