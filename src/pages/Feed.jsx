@@ -2,6 +2,7 @@ import SideBar from '../components/SideBar.jsx';
 import { VideoContext } from '../context/videoContext.jsx';
 import { useContext } from 'react';
 import VideoCard from '../components/VideoCard.jsx';
+import Loader from '../components/Loader.jsx';
 
 const Feed = () => {
   const { video, error, isLoading } = useContext(VideoContext);
@@ -10,7 +11,7 @@ const Feed = () => {
       <SideBar />
       <div className="videos">
         {isLoading ? (
-          <p>Yukleniyor ...</p>
+          <Loader />
         ) : error ? (
           <p>error</p>
         ) : (
