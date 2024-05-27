@@ -1,8 +1,27 @@
-# React + Vite
+<h1>Pokemon Guide Project</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive Pokédex website for Pokémon fans that I created with HTML5, CSS, JavaScript, and API.
+Users can easily search for the Pokédex they want and view comprehensive information for each Pokédex, including name, experience points, weight in kilograms, and more. My project runs responsively on every device screen.
 
-Currently, two official plugins are available:
+<h2> The following technologies were used in the frontend development phase of my site: </h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- HTML5
+- CSS3
+- JavaScript
+- API
+
+<h2> Visit My Pokemon Guide Project: </h2>
+
+- https://mypokemonguidewebsite.netlify.app/
+
+<h4>GIF</h4>
+
+![](images/pokemon-gif.gif)
+
+<h4>IMAGES</h4>
+
+![](images/pokemon1.png)
+
+![](images/pokemon2.png)
+
+
